@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Stack } from 'react-bootstrap'
 import { useShoppingCart } from '../context/shoppingCartContext'
 import storeItems from '../data/items.json'
+import topProduct from '../data/food.json'
 import { formatCurrency } from '../ultility/formatCurrency'
 
 type CartItemProps = {
@@ -10,7 +11,11 @@ type CartItemProps = {
 }
 export  function CartItem({id,quantity}:CartItemProps) {
     const {removeFromCart} = useShoppingCart();
-    const item = storeItems.find(item=>item.id==id);
+    const allProducts = [...topProduct,...storeItems]
+    
+    
+
+    const item = allProducts.find(item=>item.id==id);
     if(item==null) return null;
 
   return (

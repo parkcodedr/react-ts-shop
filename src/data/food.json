@@ -1,0 +1,32 @@
+[
+    {
+      "id": 5,
+      "name": "Curry Rice",
+      "price": 10.99,
+      "imgUrl": "/images/chicken-curry.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Swallow",
+      "price": 199,
+      "imgUrl": "/images/swallow.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Fried Rice",
+      "price": 14.05,
+      "imgUrl": "/images/rice-chicken.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Noddles",
+      "price": 10,
+      "imgUrl": "/images/noddles.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Spaghetti",
+        "price": 12,
+        "imgUrl": "/images/spaghetti.jpg"
+      }
+  ]

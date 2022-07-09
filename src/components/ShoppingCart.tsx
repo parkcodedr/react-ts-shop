@@ -4,6 +4,7 @@ import { useShoppingCart } from '../context/shoppingCartContext'
 import { formatCurrency } from '../ultility/formatCurrency'
 import { CartItem } from './CartItem'
 import storeItems from '../data/items.json'
+import topProduct from '../data/food.json';
 
 
 type ShoppingCartProps = {
@@ -12,6 +13,8 @@ type ShoppingCartProps = {
 
 export function ShoppingCart({isOpen}:ShoppingCartProps) {
     const {closeCart,cartItems} = useShoppingCart();
+    const allProducts = [...topProduct,...storeItems]
+    
 
   return (
     <Offcanvas show={isOpen} placement="end" onHide={closeCart}> 
@@ -27,7 +30,7 @@ export function ShoppingCart({isOpen}:ShoppingCartProps) {
                     Total {' '}
 
                     {formatCurrency(cartItems.reduce((total,cartItem)=>{
-                        const item = storeItems.find(i=>i.id===cartItem.id) ;
+                        const item = allProducts.find(i=>i.id===cartItem.id) ;
                         return total + (item?.price || 0) * cartItem.quantity;
                     },0))
                     }

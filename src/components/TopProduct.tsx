@@ -1,24 +1,22 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 import { StoreItem } from '../components/StoreItem';
-import { TopProduct } from '../components/TopProduct';
 import storeItems from '../data/items.json';
+import topProduct from '../data/food.json'
 
-export  function Store() {
+export  function TopProduct() {
   return (
    <>
-    <h1>Store</h1>
-    <Row md={2} xm={1} lg={4} className="g-3">
-        {storeItems.map(item=>(
+    <h1>Top Product</h1>
+    <Row md={2} xm={1} lg={5} className="g-3">
+        {topProduct.map(item=>(
             <Col key={item.id}>
             
         <StoreItem {...item} />
             </Col>
         ))}
     </Row>
-    <div className='mt-2 bg-white p-3'>
-        <TopProduct />
-    </div>
+    
    </>
   )
 }
