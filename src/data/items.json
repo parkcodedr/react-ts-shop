@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Red Cake",
+      "price": 10.99,
+      "imgUrl": "/images/red-cake.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ice Cake",
+      "price": 1199,
+      "imgUrl": "/images/ice-cake.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Vanilla Cake",
+      "price": 14.05,
+      "imgUrl": "/images/cut-cake.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pure Bliss",
+      "price": 14000,
+      "imgUrl": "/images/3-cakes.png"
+    }
+  ]
